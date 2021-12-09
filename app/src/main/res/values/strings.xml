@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android_Places</string>
+    <string name="name">name</string>
+    <string name="description">Description</string>
+    <string name="category">category</string>
+    <string name="address_title">address_title</string>
+    <string name="address_street">address_street</string>
+    <string name="elevation">elevation</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="remove">remove</string>
+    <string name="add">add</string>
+    <string name="placeName">Place Name</string>
+
+</resources>

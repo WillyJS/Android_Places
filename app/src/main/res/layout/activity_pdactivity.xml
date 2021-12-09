@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout shows the details of a single Place Description -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/nameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASU-Poly"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintBottom_toTopOf="@+id/category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInfo"
+        />
+
+    <TextView
+        android:id="@+id/descriptionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a place with some info "
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        app:layout_constraintBottom_toTopOf="@+id/address_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInfo"
+
+        />
+
+    <TextView
+        android:id="@+id/categoryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@id/category"
+        android:text="A University"
+        />
+
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryInfo"
+        app:layout_constraintBottom_toTopOf="@id/address_street"/>
+
+    <TextView
+        android:id="@+id/address_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Streety St."
+        app:layout_constraintTop_toTopOf="@+id/address_title"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        />
+
+    <TextView
+        android:id="@+id/address_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_street"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_title_info"
+        app:layout_constraintBottom_toBottomOf="@id/elevation"/>
+
+    <TextView
+        android:id="@+id/address_street_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/address_street"
+        android:text="Turn right at the door"
+        />
+
+    <TextView
+        android:id="@+id/elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elevation"
+        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_street_info" />
+
+    <TextView
+        android:id="@+id/elevationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@id/elevation"
+        android:text="1ft."
+        />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elevationInfo"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        />
+
+    <TextView
+        android:id="@+id/latitudeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/latitude"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        android:text="yea high"
+        />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/longitudeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@id/longitude"
+        android:text="yea far away"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="107dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
